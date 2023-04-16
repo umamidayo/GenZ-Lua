@@ -11,15 +11,18 @@ function substitute_macros(str)
     return str
 end
 
-define_macro("fr", "if")
-define_macro("ongod", "then")
-define_macro("tho", "end")
-define_macro("nocap", "local")
+function run_code(code)
+    print(substitute_macros(code))
+    loadstring(substitute_macros(code))()
+end
+
+define_macro("fr tho", "if")
+define_macro("we finna", "then")
+define_macro("real", "end")
+define_macro("no cap", "local")
 define_macro("shoutout to my boys", "print")
-define_macro("finna", "=")
-define_macro("be", "==")
+define_macro("finna be", "=")
+define_macro("no lie be", "==")
 
-local code = "nocap a finna 1 fr a be 1 ongod shoutout to my boys('we working') tho"
-
-local processed_code = substitute_macros(code)
-loadstring(processed_code)(...)
+local code = "no cap x finna be 1 fr tho x no lie be 1 we finna shoutout to my boys(x) real"
+run_code(code)
