@@ -1,13 +1,7 @@
 local GenZLua = require(game.ServerScriptService.GenZLua)
 
-GenZLua.define_macro("fr tho", "if")
-GenZLua.define_macro("we finna", "then")
-GenZLua.define_macro("real", "end")
-GenZLua.define_macro("no cap", "local")
-GenZLua.define_macro("shoutout to my boys", "print")
-GenZLua.define_macro("finna be", "=")
-GenZLua.define_macro("no lie be", "==")
+local code = "no cap part finna be Instance.new('Part') part.Parent finna be workspace part.Position finna be Vector3.new(0, 5, 0) part.Color finna be Color3.fromRGB(255, 255, 255) part.Anchored finna be yea"
+GenZLua.run_code(code)
 
-local code = "no cap x finna be 1 fr tho x no lie be 1 we finna shoutout to my boys(x) real"
-
+code = "game.Players.PlayerAdded:secure the bag(run that(player) shoutout to my boys(player.Name) real)"
 GenZLua.run_code(code)
